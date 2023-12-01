@@ -32,11 +32,11 @@ The primary objective of this project is to create a seamless system that allows
 
 ## API Documentation
 - API endpoints:
-  - `POST /api/students`: Add a new student.
-  - `GET /api/students`: Retrieve a list of all students.
-  - `GET /api/students/:id`: Get details of a specific student.
-  - `PUT /api/students/:id`: Update an existing student.
-  - `DELETE /api/students/:id`: Delete a student.
+  - `POST /api/students/add`: Add a new student.
+  - `GET /api/students/all`: Retrieve a list of all students.
+  - `GET /api/students/find/:id`: Get details of a specific student.
+  - `PUT /api/students/update/:id`: Update an existing student.
+  - `DELETE /api/students/delete/:id`: Delete a student.
 
 ## Deployment
 1. Deploy the back-end application on your chosen hosting platform (e.g., Railway or Netlify).
