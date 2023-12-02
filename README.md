@@ -39,6 +39,32 @@ The primary objective of this project is to create a seamless system that allows
   - `PUT /api/students/update/:id`: Update an existing student.
   - `DELETE /api/students/delete/:id`: Delete a student.
 
+## Testing Student Management System
+
+For robust testing and validation of the Student Management System, we've implemented a suite of test cases using Mockito within the Spring Boot framework.
+
+### Purpose
+The test suite ensures the correctness and reliability of key functionalities within the system.
+
+### Test Cases
+
+#### Adding a Valid Student
+- **Scenario**: Adding a valid student and retrieving the added student's details.
+- **Explanation**: This test verifies the successful addition of a student and confirms that the returned student's details match the expected values.
+
+#### Retrieving All Students
+- **Scenario**: Retrieving all existing students from the repository.
+- **Explanation**: This test ensures that the system correctly retrieves all students and validates the count of retrieved students.
+
+#### Retrieving a Student by ID
+- **Scenario**: Retrieving a specific student by a valid student ID.
+- **Explanation**: This test validates the functionality to fetch a student using their ID and confirms that the retrieved student's details match the expected values.
+
+### Utilizing Mockito for Testing
+Mockito is employed to simulate database interactions without impacting the actual database. This allows for controlled testing across various scenarios, enhancing the system's reliability.
+
+Feel free to expand upon these test cases or include additional scenarios pertinent to the Student Management System.
+
 ## Deployment
 1. Deploy the back-end application on own server. 
 2. Deploy the front-end application on  own server.
