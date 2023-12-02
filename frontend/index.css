@@ -1,15 +1,26 @@
+body {
+    background-color: #a2a19c; /* Light pastel yellow */
+  }
+   
+
+
 .student_form{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    background-color: transparent;
 }  
 .student_form input{
     width: 400px;    
+    background-color: transparent;
 }
 .main-form{
     display: flex;
     justify-content: center;
-    
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 1%;
+    background-color: transparent;
 }
 .student_table{
     width: 90%;
@@ -17,10 +28,18 @@
     margin-top: 1%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .input-group{
     width: 60%;
     margin: auto;
     margin-top: 2%;
+    background-color: transparent;
+}
+
+input{
+    border-radius: px;
+
+    border: 8px solid black;
 }

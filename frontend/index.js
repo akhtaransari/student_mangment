@@ -1,57 +1,50 @@
-import  {getAllStudents}  from  './getAllStudents.js';
-// import { updateUser } from './updateUser.js';
-// import { deleteUser } from './deleteUser.js';
-// import { updateUserRequest } from './updateUserRequest.js';
-
-// Your event listeners, form handling, etc.
-
-
-
-
-// Get form and add event listener for form submission
-
-const apiUrl = "http://localhost:8080";
+// Constants for API URL and table body
+const apiUrl = "https://akhtar.webpoint.co.in";
 const tableBody = document.getElementById('tableBody');
-
 const searchInput = document.querySelector('.form-control');
 const searchButton = document.querySelector('.btn-outline-primary');
-
-
 const submitBtn = document.querySelector('.submit-btn');
 const cancelButton = document.querySelector('.cancel-btn');
 
-
+// Event listener for search button
 searchButton.addEventListener("click",()=>{
    console.log(searchInput)
 });
 
+// Fetch all students and populate the table on window load
 window.addEventListener('DOMContentLoaded', ()=>{
     getAllStudents(apiUrl,apiUrl)
 });
 
-
-// function getAllStudents() {
-//     fetch(`${apiUrl}/api/students/all`)
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error('Network response was not ok');
-//             }
-//             return response.json();
-//         })
-//         .then(students => {
-//             // Process the fetched student details as needed
-//             populateTable(students);
+// Function to fetch all students from the API
+function getAllStudents() {
+    fetch(`${apiUrl}/api/students/all`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(students => {
+            // Process the fetched student details as needed
+            populateTable(students);
             
-//         })
-//         .catch(error => {
-//             console.error('There was a problem with the fetch operation:', error);
-//         });
-// }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+
+// Function to populate the table with student details
 
 function populateTable(students){
 
-tableBody.innerHTML = null;
+    tableBody.innerHTML = null;
     
+
+    // Create table rows and cells for each student
+    // ... (existing code for creating table rows and cells)
+    // Attach event listeners for update and delete buttons
     
     students.forEach((student, index) => {
         const row = document.createElement('tr');
@@ -127,7 +120,9 @@ tableBody.innerHTML = null;
       alert('An error occurred. Please try again later.');
     }
   }
-  
+
+
+  // Function to update students form to update
   function updateUser({studentId, studentCode, name , major , enrollmentDate}){
     
         document.getElementById('validationCustom01').value = name
@@ -148,7 +143,7 @@ tableBody.innerHTML = null;
         localStorage.setItem("id",studentId);
 
   }
-
+    // Function to filter students by studentId
     function updateUserReqeust(studentId, updatedStudent) {
     fetch(`${apiUrl}/api/students/update/${studentId}`, {
         method: 'PUT',
