@@ -8,7 +8,7 @@ The primary objective of this project is to create a seamless system that allows
 
 ## Technologies Used
 - Back-End:  Spring Boot
-- Front-End: HTML , CSS ,  Vanilla JS
+- Front-End: HTML , CSS ,BootStarp,  Vanilla JS
 - Database:  MySQL
 
 ## Features
@@ -31,6 +31,7 @@ The primary objective of this project is to create a seamless system that allows
 3. Navigate to the frontend folder and follow the frontend setup instructions.
 
 ## API Documentation
+- API url: https://akhtar.webpoint.co.in
 - API endpoints:
   - `POST /api/students/add`: Add a new student.
   - `GET /api/students/all`: Retrieve a list of all students.
@@ -39,8 +40,8 @@ The primary objective of this project is to create a seamless system that allows
   - `DELETE /api/students/delete/:id`: Delete a student.
 
 ## Deployment
-1. Deploy the back-end application on your chosen hosting platform (e.g., Railway or Netlify).
-2. Deploy the front-end application on Netlify and link it to the back-end services.
+1. Deploy the back-end application on own server. 
+2. Deploy the front-end application on  own server.
 
 ## Contributors
 - Akhtar Ansari (Java Full Stack Web Developer)
