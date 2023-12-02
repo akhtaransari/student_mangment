@@ -1,0 +1,26 @@
+.student_form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}  
+.student_form input{
+    width: 400px;    
+}
+.main-form{
+    display: flex;
+    justify-content: center;
+    
+}
+.student_table{
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+}
+
+.input-group{
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+}

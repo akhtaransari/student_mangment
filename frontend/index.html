@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Managment Tool</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    
+
+</head>
+<body>
+
+<div class="student_form">
+    <form class="needs-validation" novalidate>
+      <div class="main-form">
+        <div class="left-side-form">
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">Student Name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Student Name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Major</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Major"  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="right-side-form">
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Enrollment Date</label>
+              <input type="date" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid Enrollment date..
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom05">Student Code</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Code" required>
+              <div class="invalid-feedback">
+                Please provide a valid Student Code.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button  class="btn btn-primary submit-btn" type="submit">Submit</button>
+        <button class="btn btn-warning cancel-btn" type="reset">Cancel</button>
+        </div>
+      </form>
+</div>
+<div class="input-group">
+  <!-- <form> -->
+    <input type="search" class="form-control rounded" placeholder="Search By Student Ccode" aria-label="Search" aria-describedby="search-addon" />
+    <button type="submit" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+  </form>
+</div>
+
+<div class="student_table">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Student Code</th>
+            <th scope="col">Enrollment Date</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- append your raws here -->
+        </tbody>
+      </table>
+</div>
+
+<script type="module" src="getAllStudents.js"></script>
+</body>
+</html>
+<script src="index.js"></script>
