@@ -1,5 +1,6 @@
 body {
-    background-color: #a2a19c; /* Light pastel yellow */
+    background-color: #d6d5d2; /* Light pastel yellow */
+    
   }
    
 
@@ -8,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    background-color: transparent;
 }  
 .student_form input{
     width: 400px;    
@@ -18,9 +18,10 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin-bottom: 1%;
-    background-color: transparent;
+    background-color: white;
+    
 }
 .student_table{
     width: 90%;
@@ -28,18 +29,25 @@ body {
     margin-top: 1%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 10px;
-    background-color: transparent;
 }
 
 .input-group{
     width: 60%;
     margin: auto;
     margin-top: 2%;
-    background-color: transparent;
+}
+
+.input-group form{
+    border-radius: px;
+    width: 60%;
+    margin:auto;
+    text-align: center;
+
 }
 
 input{
-    border-radius: px;
-
-    border: 8px solid black;
+    border: solid black 3px;
+}
+button{
+    margin: 1%;
 }
