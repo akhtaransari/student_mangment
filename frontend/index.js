@@ -3,8 +3,7 @@ import populateTable  from "./components/populateTable.js";
 import updateUserReqeust from "./httpRequest/updateUserRequest.js"
 import alert from "./components/alert.js";
 
-const apiUrl = 'http://localhost:8080';
-// const apiUrl = "https://akhtar.webpoint.co.in";
+const apiUrl = "https://akhtar.webpoint.co.in";
 const searchInput = document.querySelector('.form-control');
 const searchButton = document.querySelector('.btn-outline-primary');
 const submitBtn = document.querySelector('.submit-btn');
@@ -91,7 +90,7 @@ searchForm.addEventListener("submit", (event) => {
             if (filteredData.length){
                 populateTable(filteredData);
             }else {
-                alert("no student found with"+input.value)
+                alert("no student found with "+input.value)
             }
 
             

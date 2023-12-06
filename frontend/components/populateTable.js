@@ -31,7 +31,7 @@ export default function populateTable(students){
         cell4.textContent =  student.studentCode
         cell5.textContent = student.enrollmentDate
         cell6.textContent = student.major
-        
+        console.log(student)
         
 
         deleteButton.textContent = "Delete"

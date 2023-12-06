@@ -1,8 +1,8 @@
 import alert from '../components/alert.js';
 import getAllStudents from './getAllStudents.js';
 import populateTable from '../components/populateTable.js';
-const apiUrl = 'http://localhost:8080';
 
+const apiUrl = "https://akhtar.webpoint.co.in";
 
 export default async function deleteUser(userId) {
   try {

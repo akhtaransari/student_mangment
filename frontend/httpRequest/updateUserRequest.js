@@ -1,6 +1,6 @@
 import alert from "../components/alert.js";
 
-const apiUrl = 'http://localhost:8080';
+const apiUrl = "https://akhtar.webpoint.co.in";
 const submitBtn = document.querySelector('.submit-btn');
 
 export default function updateUserReqeust(studentId, updatedStudent) {
